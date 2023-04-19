@@ -123,7 +123,7 @@ std::string print_total(std::list <Data_Package>& Data_Package_list)
         }
     }
     std::string total;
-    total = "Total: " + std::to_string(tot_len) + " " + unit_measure + "\n       " +std::to_string(tot_packages) + " Packages";
+    total = "Total: " + std::to_string(tot_len) + " " + unit_measure + "\n       " +std::to_string(tot_packages) + " Packages" + "\n";
     return total;
 
 }
@@ -181,7 +181,7 @@ int main(int argc, char** argv)
         int end = clock(); //Обновляем текущее время
         if (end - start > 60000) //Разница времени в мс
         {
-            std::cout << (double)(end - start) / CLOCKS_PER_SEC<<std::endl;
+            std::cout << (double)(end - start) / CLOCKS_PER_SEC * 1000 <<" sec"<<std::endl;
             break;
         }
     }
