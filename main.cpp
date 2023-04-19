@@ -187,14 +187,14 @@ int main(int argc, char** argv)
     }
     pcap_close(handle);
 
+    fout<<print_total(Data_Package_list);
 
     for (auto it = Data_Package_list.begin(); it != Data_Package_list.end(); ++it)
     {
         fout<<(*it)<<std::endl;
     }
-    fout<<print_total(Data_Package_list);
+    
     fout.close();
-   
 
     return 0;
 }
