@@ -15,6 +15,7 @@
  Готовою
  
  2) Установка libpcap:
+      sudo apt-get install libpcap-dev
       Скачиваем архив с сайта выше. Распаковываем его. Открываем разархивированную папку в терминале. Запускаем команду ./configure. Возможно появятся ошибки всвязи с отсутвием flex и bison. 
       Устанавливаем их: sudo apt install flex; sudo apt install bison.
       Запускаем команду make.
