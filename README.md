@@ -12,7 +12,7 @@
 
 1) Установка Cmake:
       В терминале выполняем команду: sudo apt install cmake
- Готовою
+ Готово.
  
  2) Установка libpcap:
       sudo apt-get install libpcap-dev
